@@ -4,15 +4,20 @@ import json
 
 counter = 0
 
+#enter your api key here
+apiKey = "9d153009-e961-4718-a343-2a36b0a1d1fd"
+
+#enter your deviceId
+deviceid = "fc063ca9-1910-af17-0eee-35392146847e"
 
 bookCoon = http.client.HTTPSConnection("api.curefit.co")
 
 headersBook = {
-    'apikey': "9d153009-e961-4718-a343-2a36b0a1d1fd",
+    'apikey': apiKey,
     'appversion': "7",
     'at': "04c787b6-9548-492d-9bae-3f20660b76fb",
     'content-type': "application/json",
-    'deviceid': "fc063ca9-1910-af17-0eee-35392146847e",
+    'deviceid': deviceid,
     'origin': "https://www.cure.fit",
     'osname': "browser",
     'referer': "https://www.cure.fit/cult/classbooking/15?pageFrom=cultCLP&centerId=15&pageType=classbooking",
@@ -30,10 +35,10 @@ while 1:
     conn = http.client.HTTPSConnection("api.curefit.co")
 
     headers = {
-    'apikey': "9d153009-e961-4718-a343-2a36b0a1d1fd",
+    'apikey': apiKey,
     'origin': "https://www.cure.fit",
     'at': "04c787b6-9548-492d-9bae-3f20660b76fb",
-    'deviceid': "4faaad6f-950b-ef17-3406-682e89b80918",
+    'deviceid': deviceid,
     'appversion': "7",
     'content-type': "application/json",
     'if-none-match': "W/\"a315-8G81Mgp4jSeZyEeQoSmmRFQYJB0\"",
